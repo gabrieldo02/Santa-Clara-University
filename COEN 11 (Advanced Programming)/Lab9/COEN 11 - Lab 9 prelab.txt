@@ -1,0 +1,8 @@
+3 locks
+- lock when changing the list or handling the list in the auto-save thread/function
+lock when insert
+lock when delete
+lock when change size
+- lock when handling the auto-saved file
+- lock when reading the file 
+
