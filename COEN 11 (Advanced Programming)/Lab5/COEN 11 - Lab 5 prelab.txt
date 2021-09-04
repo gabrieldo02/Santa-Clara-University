@@ -1,0 +1,21 @@
+1. Cases for insert
+(1)list is empty:
+tail = head = p;
+
+(2)list not empty:
+tail->next = p;
+tail = p;
+
+2. Cases for delete
+(1)delete first node:
+head=p->next;
+
+(2)delete last node:
+tail=q;
+q->next=NULL;
+
+(3)delete only node:
+tail = head = NULL;
+
+(4) delete middle node:
+q->next = p-> next;
