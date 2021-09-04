@@ -1,0 +1,39 @@
+/* Gabriel Do
+COEN 11
+Lab 1
+Tuesday 2:15pm */
+
+int division(divisor received as argument, quotient received as argument)
+{
+	initialize dividend=divisor*quotient;
+	output "divident value / divisor value = ?";
+	initialize input=0;
+	get input;
+	if input==quotient value
+		return 1;
+	else 
+		return 0;
+	endif
+}
+
+int main()
+{
+	initialize counter=0;
+	initialize i;
+	call srand;
+	for i=0 to 10
+		initialize divisor = rand from 1 to 13
+		initialize quotient = rand from 0 to 13
+		initialize answer = call division function
+		if answer==1
+			output "Right";
+			increase counter;
+		else
+			output "Wrong";
+			output "Correct quotient: quotient value";
+		endif
+	endfor
+	output "Score:counter value/10";
+}
+
+	
