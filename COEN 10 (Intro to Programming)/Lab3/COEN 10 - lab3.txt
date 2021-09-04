@@ -1,0 +1,9 @@
+<body>
+
+<form action="lab3a.php" method="POST">
+        <input type= "number" name="number">
+        <input type="submit"/>
+</form>
+</body>
+</html>
+~                                                                                                              ~                           
