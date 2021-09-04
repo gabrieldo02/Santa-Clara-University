@@ -1,0 +1,21 @@
+/* Gabriel Do
+COEN 10
+Lab 8
+Monday 2:15pm
+*/
+
+void outputAppointmentsByNumberOfPets() 
+{
+    if counter=0
+        output "schedule is empty"
+    else 
+        output "How many pets?"
+        get input petsNum
+        for i=0 to 5
+            if pets[i]==petsNum
+                output "names[i]-(i+1) pm"
+            endif
+        endfor
+    endif
+}
+
