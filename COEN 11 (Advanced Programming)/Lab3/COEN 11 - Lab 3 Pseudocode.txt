@@ -1,0 +1,23 @@
+/* Gabriel Do
+COEN 11
+Lab 3
+Tuesday 2:15pm */
+
+void search_size()
+{
+	initialize struct pointer *p=position;
+	initialize i;
+	initialize size;
+	initialize wasFound=0;
+	output "What size?";
+	get input size;
+	for i=0 to counter
+		if (p->group <=size)
+			wasFound=1;
+			output "(i+1). (p-->names) - (p-->group) people";
+		endif
+	endfor
+	if (wasFound==0)
+		output "No entries less than or equal to entered size";
+}
+
