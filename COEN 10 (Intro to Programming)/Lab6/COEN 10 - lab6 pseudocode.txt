@@ -1,0 +1,59 @@
+/* Gabriel Do
+ * * COEN 10
+ * * Lab 6
+ * * Monday 2:15pm
+ * */
+Initialize array schedule (0,0,0,0,0)
+Initialize timeslot
+input x
+counter=0
+while(input != 9)
+    output "(1) schedule an appointment"
+    output "(2) cancel an appointment"
+    output "(3) list the schedule"
+    output "(9) exit"
+    get input x
+    if x=1 // schedule apointment
+        if counter=5 // full schedule
+            output "come back tomorrow"
+        else 
+            for i=0 to 5
+                if schedule[i] = 0 // first open slot found
+                    increase schedule[i]
+                    increase counter
+                    output "appointment made at time (i+1) pm"
+                    exit for loop
+                endif
+	     endfor
+	endif
+    endif  
+    else if x=2
+	get input timeslot
+	if counter=0
+		output "schedule is empty"
+	else 
+		output "Which time do you want to cancel"
+		if schedule[timeslot-1]=0
+			output "That time slot is aleady free"
+		else
+			output "Slot at (timeslot) pm has been canceled" 
+			decrease schedule[timeslot-1]=0
+			decrease counter
+		endif
+	endif
+     else if x=3
+	if counter=0
+		output "schedule is empty"
+	else for i=0 to 5
+		if schedule[i]=0	
+			output "(i+1) pm-free"
+		else 
+			output "(i+1) pm-busy"
+		endif
+	endfor
+	endif
+     else if x=9
+		return 1;
+     else
+		output "bad option"
+endwhile
