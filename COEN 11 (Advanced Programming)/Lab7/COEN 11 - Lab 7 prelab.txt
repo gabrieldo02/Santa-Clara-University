@@ -1,0 +1,10 @@
+File not exist
+-check if the list is empty
+-after check if a file by the given name exists by using "more" command
+File exists
+-check if the list is correctly formed from the information obtained from the file by using "print" function
+-after check if the new information is saved into the same file name by using "more" command
+List is empty
+-check if there are no names or group sizes in the file by using "cat" or "more" command
+List not empty
+-check if the correct names and group sizes are in the file is there by using "more" command
